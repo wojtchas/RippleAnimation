@@ -21,14 +21,14 @@ public extension UIView {
 
     public struct RippleConfiguration {
         var color: UIColor
-        var clipsToBounds = false
+        var clipsToBounds = true
         var startRect: CGRect? = nil
         var scale: CGFloat = DefaultScale
         var scaleAnimateDuration = DefaultScalingAnimateDuration
         var fadeAnimateDuration = DefaultAlphaAnimateDuration
         var completionHandler: (() -> Void)? = nil
-
-        init(color: UIColor) {
+        
+        public init(color: UIColor) {
             self.color = color
         }
     }
